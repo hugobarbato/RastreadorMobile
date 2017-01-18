@@ -1,0 +1,21 @@
+<ion-view title="Cadastro" id="page3" style="background-color:#0A0A0A;">
+    <ion-content padding="true" class="has-header">
+        <form id="cadastro-form2" class="list">
+            <ion-list id="cadastro-list2">
+                <label class="item item-input" id="cadastro-input4">
+                    <span class="input-label">E-mail</span>
+                    <input type="email" placeholder="" ng-model="email">
+                </label>
+                <label class="item item-input" id="cadastro-input5">
+                    <span class="input-label">Senha</span>
+                    <input type="password" placeholder="" ng-model="senha">
+                </label>
+                <label class="item item-input" id="cadastro-input3">
+                    <span class="input-label">Confirmação</span>
+                    <input type="text" placeholder="" ng-model="confirmacao">
+                </label>
+            </ion-list>
+            <button id="cadastro-button3" style="font-size:20px;" class="button button-assertive  button-block" ng-click="Usuario.cadastrar(email, senha, confirmacao)">Cadastrar</button>
+        </form>
+    </ion-content>
+</ion-view>

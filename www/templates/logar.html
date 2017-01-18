@@ -1,0 +1,19 @@
+<ion-view title="Logar" id="page2" style="background-color:#0A0A0A;" >
+    <ion-content padding="true" class="has-header">
+        <form id="logar-form1" class="list">
+            <ion-list id="logar-list1">
+                <label class="item item-input" id="logar-input1">
+                    <span class="input-label">E-mail</span>
+                    <input type="email" placeholder="" ng-model="email">
+                </label>
+                <label class="item item-input" id="logar-input2">
+                    <span class="input-label">Senha</span>
+                    <input type="password" placeholder="" ng-model="senha">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button id="logar-button1" style="font-size:20px;" class="button button-assertive  button-block" ng-click="Usuario.logar(email, senha)">Logar</button>
+            <a ui-sref="cadastro" id="logar-button2" class="button button-assertive  button-block button-clear">Cadastre-se agora</a>
+        </form>
+    </ion-content>
+</ion-view>
